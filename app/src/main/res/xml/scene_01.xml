@@ -4,8 +4,8 @@
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetEnd="@layout/motion_cl_end"
-        motion:constraintSetStart="@layout/motion_cl_start">
+        motion:constraintSetStart="@layout/motion_cl_start"
+        motion:constraintSetEnd="@layout/motion_cl_end">
 
         <OnSwipe
             motion:dragDirection="dragLeft"

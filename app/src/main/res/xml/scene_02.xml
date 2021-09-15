@@ -5,6 +5,7 @@
     <Transition
         motion:constraintSetStart="@id/state1"
         motion:constraintSetEnd="@+id/state2"/>
+
     <Transition
         motion:constraintSetStart="@id/state2"
         motion:constraintSetEnd="@+id/state3"/>
@@ -50,10 +51,47 @@
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintVertical_bias="0.499" >
-            <CustomAttribute motion:attributeName="text" motion:customStringValue="state2" />
+            <CustomAttribute motion:attributeName="text"
+                motion:customStringValue="state2" />
         </Constraint>
 
     </ConstraintSet>
+
+
+
+    <ConstraintSet android:id="@+id/state3">
+        <Constraint
+            android:id="@+id/view"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.0">
+            <CustomAttribute
+                motion:attributeName="text"
+                motion:customStringValue="state1"/>
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/state4">
+        <Constraint
+            android:id="@+id/view"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="1"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.0" >
+            <CustomAttribute motion:attributeName="text"
+                motion:customStringValue="state2" />
+        </Constraint>
+    </ConstraintSet>
+
 
 
     <!--  ConstraintSet 을 통해 background color 조정  -->

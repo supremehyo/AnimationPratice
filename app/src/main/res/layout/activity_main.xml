@@ -23,8 +23,8 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="nextState"
         android:text="transition"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:onClick="nextState" />
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.motion.widget.MotionLayout>
